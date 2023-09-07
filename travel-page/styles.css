@@ -53,12 +53,17 @@
   width: 90%;
   margin: auto;
   margin-bottom: 40px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .destination {
   margin: 0 20px;
   text-transform: uppercase;
+}
+
+#highlights {
+  padding: 24px;
+  background: linear-gradient(45deg, rgb(227, 255, 253), rgb(202, 243, 240));
 }
 
 #highlights h2 {
