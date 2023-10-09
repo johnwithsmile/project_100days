@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <form action="" method="GET">
+            <section>
+                <h2>How can we help you?</h2>
+                <ul>
+                    <li>
+                        <label for="user-name">Your name</label>
+                        <input type="text" name="user-name" id="">
+                    </li>
+                    <li>
+                        <label for="user-mail">Your E-mail address</label>
+                        <input type="email" name="user-mail" id="">
+                    </li>
+                    <li>
+                        <label for="user-phone">Your Phone Number</label>
+                        <input type="text" name="user-phone" id="">
+                    </li>
+                    <li>
+                        <label for="user-message">Your Message</label>
+                        <textarea type="text" name="user-message" id="">
+                        </textarea>
+                    </li>
+                    <li>
+                        <label for="user-origin">How did you find us?</label>
+                        <select name="user-origin" id="user-origin">
+                            <option value="web">Web Search</option>
+                            <option value="viral">Word of Mouth</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>How should we reply?</h2>
+                <ul>
+                    <li class="checkbox-container">
+                        <input type="checkbox" name="reply" id="contact-call" value="call">
+                        <label for="contact-call">Call me</label>
+                    </li>
+                    <li class="checkbox-container">
+                        <input type="checkbox" name="reply" id="contact-mail" value="phone">
+                        <label for="contact-mail">Send me an email</label>
+                    </li>
+                    <li class="checkbox-container">
+                        <input type="checkbox" name="reply" id="contact-no" value="no">
+                        <label for="contact-no">Don't reply</label>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <div class="checkbox-container">
+                            <input type="checkbox" name="terms" id="agree-terms">
+                            <label for="agree-terms">Agree to terms?</label>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="submit-container">
+                <button type="reset">Clear</button>
+                <button type="submit">Submit</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
