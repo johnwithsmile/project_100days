@@ -1,30 +1,37 @@
 body {
-  background-color: rgb(31, 30, 30);
-  font-family: "Roboto", sans-serif;
-}
-
-form {
-  width: 30rem;
-  margin: 3rem auto;
-  background-color: rgb(255, 255, 255);
-  padding: 1rem;
-  border-radius: 6px;
+  font-family: sans-serif;
+  background-color: rgb(238, 251, 252);
 }
 
 h1 {
   text-align: center;
-  color: white;
+  margin: 2rem;
+}
+
+form {
+  width: 40rem;
+  margin: auto;
+  background-color: rgb(246, 250, 255);
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+label {
+  color: rgb(66, 76, 97);
+  margin: 0.5rem 0;
+  display: block;
+  font-weight: bold;
 }
 
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-label {
-  margin-bottom: 0.5rem;
-  display: block;
 }
 
 textarea {
@@ -39,8 +46,8 @@ select {
   margin-bottom: 1rem;
   box-sizing: border-box;
   font: inherit;
-  border: 1px solid rgb(184, 184, 184);
-  padding: 0.25rem;
+  border: 1px solid rgb(152, 159, 184);
+  padding: 0.5rem;
   color: rgb(61, 58, 58);
 }
 
@@ -57,7 +64,6 @@ textarea:focus {
 }
 
 button {
-  display: block;
   font: inherit;
   background-color: rgb(32, 5, 63);
   color: white;
@@ -81,6 +87,10 @@ button:hover {
   margin-right: 0.5rem;
 }
 
+.radio-container label {
+  margin: 0;
+}
+
 .checkbox-container {
   display: flex;
 }
@@ -88,4 +98,8 @@ button:hover {
 .checkbox-container input {
   width: auto;
   margin-right: 0.5rem;
+}
+
+.checkbox-container label {
+  margin: 0;
 }
