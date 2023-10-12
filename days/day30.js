@@ -1,10 +1,21 @@
-let greetingText;
-let age;
-let hobbies;
-let job;
-greetingText = "Hi my name is 'John'";
-age = 32;
-hobbies = ["Sports", "Cooking", "Reading"];
-job = { title: "Developer", place: "New York", salary: 50000 };
+let age = 30;
+let username = "John";
+let hobbies = ["Sports", "Cooking", "Reading"];
+let job = {
+  title: "Developer",
+  place: "New York",
+  salary: 50000,
+};
 
-// alert(hobbies[1]);
+let totalAdultYears;
+
+function calculateAdultYears(userAge) {
+  return userAge - 18;
+}
+totalAdultYears = calculateAdultYears(age);
+alert(totalAdultYears);
+
+age = 45;
+totalAdultYears = calculateAdultYears(age);
+
+alert(totalAdultYears);
