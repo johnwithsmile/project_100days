@@ -11,3 +11,7 @@ function updateRemainingCharacters(event) {
 
   remainingCharsElement.textContent = remainingCharacters;
 }
+
+// const spanElement = document.getElementById("remaining-chars");
+
+// spanElement.className = "warning";

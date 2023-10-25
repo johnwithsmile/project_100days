@@ -29,3 +29,5 @@ function getUserInput(event) {
 }
 
 inputElement.addEventListener("input", getUserInput);
+
+const spanElement = document.getElementById("remaining-chars");
