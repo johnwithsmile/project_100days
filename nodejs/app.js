@@ -1,18 +1,14 @@
-const http = require("http");
+const express = require("express");
 
-function handleRequest(request, response) {
-  if (request.url === "/currenttime") {
-    response.statusCode = 200;
-    response.end("<h1>" + new Date().toISOString() + "</h1>");
-  } else if (request.url === "/") {
-    response.statusCode = 200;
-    response.end("<h1> Hello World! </h1>");
-  }
-}
-const server = http.createServer(handleRequest);
+const app = express();
 
-server.listen(3000);
+app.get("/currenttime", function (req, res) {
+  res.send("<h1>" + new Date().toISOString() + "</h1>");
+});
+//localhost:3000/currettime
 
-// amazon.com = > send a request to Amazon's server
-// Entrypoints for network traffic. Http requests sent for your browser to some remote machine require such an entrypoint in order to be handled by the server
-// amazon.com:443 (80)
+app.get("/", function (req, res) {
+  res.end("<h1> Hello World! </h1>");
+});
+// localhost:3000/
+app.listen(3000);
